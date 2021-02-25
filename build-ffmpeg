@@ -394,9 +394,9 @@ cd "$PACKAGES"/ffmpeg-4.3/ || exit
     --extra-ldflags="$LDFLAGS" \
     --extra-libs="-lpthread -lm" \
 	--enable-static \
-	--disable-debug \
+	--enable-debug \
 	--enable-shared \
-	--disable-ffplay \
+	--enable-ffplay \
 	--disable-doc \
 	--enable-openssl \
 	--enable-gpl \
