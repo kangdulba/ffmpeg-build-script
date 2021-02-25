@@ -395,7 +395,7 @@ cd "$PACKAGES"/ffmpeg-4.3/ || exit
     --extra-libs="-lpthread -lm" \
 	--enable-static \
 	--disable-debug \
-	--disable-shared \
+	--enable-shared \
 	--disable-ffplay \
 	--disable-doc \
 	--enable-openssl \
@@ -417,10 +417,6 @@ cd "$PACKAGES"/ffmpeg-4.3/ || exit
 	--enable-libopencore_amrnb \
 	--enable-filters \
 	--enable-libvidstab \
-	--enable-libavcodec \
-	--enable-libswscale \
-	--enable-libavfilter \
-	--enable-libxml2 \
 	--enable-libaom
 
 execute make -j $MJOBS
